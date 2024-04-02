@@ -1,0 +1,20 @@
+{
+  "name": "app1",
+  "module": "index.ts",
+  "type": "module",
+  "dependencies": {
+    "@repo/package1": "workspace:*",
+    "@repo/package2": "workspace:*",
+    "@repo/package3": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "scripts": {
+    "build:app": "echo 'the app should be built last' && bun build ./index.ts --outdir ./app",
+    "deploy": "bun ./app/index.js"
+  }
+}

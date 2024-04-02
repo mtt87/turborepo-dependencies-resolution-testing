@@ -1,0 +1,17 @@
+{
+  "name": "@repo/package2",
+  "module": "index.ts",
+  "type": "module",
+  "exports": {
+    ".": "./lib/index.js"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "scripts": {
+    "build:package": "echo 'this should be built first' && bun build ./index.ts --outdir ./lib"
+  }
+}

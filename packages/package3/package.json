@@ -1,0 +1,20 @@
+{
+  "name": "@repo/package3",
+  "module": "index.ts",
+  "type": "module",
+  "exports": {
+    ".": "./lib/index.js"
+  },
+  "dependencies": {
+    "@repo/package1": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "scripts": {
+    "build:package": "echo 'this should be built third' && bun build ./index.ts --outdir ./lib"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "turborepo-test",
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "dependencies": {
+    "turbo": "^1.13.2"
+  }
+}
